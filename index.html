@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<head>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+    <style>
+        
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(5, 5, 5);
+    font-family: 'Inter';
+  }
+
+        .header {
+            position: relative;
+            width: 100%;
+            height: 400px; 
+            background: url('https://lh3.googleusercontent.com/fife/AKsag4Nje5UptyeSIPFCn2iPhHiQlCnTkLsd5LeI6KqUo7q9yog-as3Lgf3hPi3uKqt69P_TTSzr-AnUD0kMU74Ff8XTX_yo2ObOj_2pZFSapxNQ6sUs8ZfeLt9x8y_gEAGd5IoTr81Jo8viA1WsdM1wMNfGmEg9xIDA0fjbXR94E6xXdupHpUbeCMDwZzBC4hAWkT7i1lzDjnT8UB1ywjbI-7NPx7IRdga9Ey08MnDdUEC9GXM2K9BZciNw7aCqJ4GtuIX_tKl0Aegu03Z2VtyiCUbvjaA1s3SE6GhbClfxGiQtMq5FxV8vzbWi9MjBedhvbannyKZQY7ePOpoohX_iy_88QmpKI3EpJn7R_Gv7ndMn6z5zGQFCltvl3qN9ZMuiG6QL73evTYtP_B_biNCjids-bVf-zFEJYEMt7Su9kOAQWr__p0sk90G2lY7CSUde9S3xm4l6fVGY1M3UK6u-Cv8_5TvLxIxW97fW2C2jWN4YrGhQ3g3ETH4kr-HLUA5BwTcUpzqvr--nImPgiO5v9ZPgR8lE1av-22-XxmiqOLaE_P7gLChxzVJrbA7J3h3adOSvSW3yAysPl5P5WfUvmf3XXVsgMV59w_n2Db-LWJwXu4ChMAFn54UlT_Rl6qUfKdaY52HLGb3CVHalIZBm2TM6W9qUuGfkModOKhuzqYGSR2HR32SX-M8ApDYgxodwlaKyDKznPUpN1UtmMKaPjskIPfE-PSq5tu9x8gjQ-g9K8ThgPzRWy6OPx3zzg41RL88BmczbsM5rgtFJ8rzq8kKgFUxD2Hx6t1UnI4QMwQduA-SeCKjnueGv4gcTpR0_0Wtx6jWXz4ChnIGajUBv-O0CD3xRKjLPqcTlqLuaANfRya5u71LzmpPBytFk7qK5fglsjo7pNM3pTrYwZ4QF2uvoAnDIXkTfaSCFw-l7R5k8z5rfcCLBRAewzEXY1Qe_2dD2QX3_lv0upSTYSFTkIle64X2rUsVexS_ChWBhAwV8Tb-eDuimPhSsjIYdOYzqN1Z_FsPPU4kT_GgM0lPSc9c1Po76xHNA71YHC44MbZOQe23831q2AB9paRISMUFBazB0w3aVbFf8c_mc9pT6JM__22-aWTBRhfjUG4k-pujWj2EWZx62Ti7-rHg9ziix6v8JURBvbuvPBdlH8pb0ODhugOSLYN4iOVJqpJSuT28es6W4FMJ2J3XIUP3EKmmfFAcfGPpDvwhkaIWSEKnIe8WBm0Nzy0yCpZY6plASGxUYpXmY7ftfDS6WcJp-jWclLtxEpCJwGf_cFfpmB8S2AtNQOZskLfvo7tYmBbEzspk_ss6TtfSztURYfssVJDh0nP3nEXrtSxRH5OF3PjkUeJk3eMlhhZedSGayoPr_0q-D7bPf2SyVJ4nycsvf7AB6OLkE4-URnWYez63-2QRUVvVJSkZH4Gk8OydjXISlTKKqYeU71TOd4Rviy4neaK14iUA9cpmLN8_ScwKlTQje--CXe8H0F4vw-2K-X1S0kQP3FBHr7XjOVOrhjOspk2lOWmp8Ha_9=w2000-h2570') center/cover no-repeat;
+            border-bottom-left-radius: 25px ;
+            border-bottom-right-radius: 25px ;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            border-bottom-left-radius: 25px ;
+            border-bottom-right-radius: 25px ;
+        }
+
+        .overlay h1 {
+            margin: 0;
+        }
+
+        .overlay p {
+            margin: 10px 0;
+        }
+
+        .title1{
+            color: #e85d04 ;
+            margin-top: 8px;
+        }
+
+        .text1{
+            color: white;
+            width: 90%;
+            margin-bottom: 0px;
+            
+        }
+
+        .home1{
+            text-align: center;
+        }
+
+
+
+
+
+        /*results_div*/
+
+        .results_screen_MOBILE{
+            width: 200px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .results_div_MOBILE{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .results_div_DESKTOP{
+                display: flex;
+                flex-direction: column;
+            }
+
+
+
+            .results_div_DESKTOP2{
+                flex-direction: column;
+            }
+        
+
+
+
+        
+
+
+            /*layout responsivi*/
+
+        @media (max-width: 450px) {
+
+            .results_div_MOBILE{
+                display: flex;
+            }
+
+            .results_div_DESKTOP{
+                display: none;
+            }
+
+            .results_div_DESKTOP2{
+                display: none;
+            }
+        }
+
+
+
+        
+
+        @media (min-width: 451px) {
+
+            .results_div_MOBILE{
+                display: none;
+            }
+
+            .results_div_DESKTOP{
+                display: flex;
+            }
+
+            .results_div_DESKTOP2{
+                display: none;
+            }
+
+        }
+
+     
+        
+        
+
+        @media (min-width: 900px) {
+
+
+.results_div_MOBILE{
+    display: none;
+}
+
+.results_div_DESKTOP{
+    display: none;
+}
+
+.results_div_DESKTOP2{
+    display: flex;
+}
+}
+
+
+
+
+    
+
+
+
+        /*bottone*/
+        
+        .button {
+            font-family: 'Inter';
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    #e85d04 10.8%,
+    #3d3a4e 94.3%
+  );
+  transition: all 0.475s;
+}
+        
+
+
+
+    </style>
+</head>
+<body>
+
+    <div id="landing_page">
+
+    <div style="width: 100%; height: 10%; display: flex; justify-content: center; align-items: center;">
+        <p style="color: white;">Ecomm Rewards</p>
+    </div>
+
+    <div class="header">
+        <div class="overlay">
+            <h1 style="margin-top: 290px;">Ecomm Rewards</h1>
+            <p style="width: 90%; font-size: 20px;">Scoprirai quanto sia semplice raddoppiare il tuo fatturato costantemente nel tempo dopo soli 3 mesi</p>
+            <div style="margin-top: 50px;">
+                <iframe src="https://player.vimeo.com/video/857334134?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" height="400px" frameborder="0" allow="autoplay;" id="vimeoVideo"></iframe>
+            </div>
+        </div>
+    </div>
+   
+
+    <div class="home1" style="margin-top: 270px; display: flex; flex-direction: column; align-items: center;">
+    
+        <div style="background-color: white; width: 80%; height: 1px; margin-top: 20px; margin-bottom: 20px;  "></div>
+        <p class="text1">Hai già provato <span  style="color: #e85d04;">diversi business online come il dropshipping, trading, amazon FBA</span> e tutti questi metodi che ormai sono obsoleti e ti fanno</p>
+        <h3 class="title1">PERDERE SOLO SOLDI</h3>
+
+        <div style="background-color: white; width: 80%; height: 1px; margin-top: 20px; margin-bottom: 20px; "></div>
+        <p class="text1">Sei <span style="color: #e85d04;">costretto a lavorare tutto il giorno</span> e ti ritrovi sempre a 0 alla fine del mese?</p>
+        <h3 class="title1">CI SONO PASSATO ANCHE IO</h3>
+
+        <div style="background-color: white; width: 80%; height: 1px; margin-top: 20px; margin-bottom: 20px; "></div>
+        <p class="text1">Ti spiegherò che <span style="color: #e85d04;">esiste un nuovo Business Segreto CUCITO SU MISURA PER TE</span> in base a tempo e disponibilità economica che <span style="color: #e85d04;">ti permetterà di guadagnare quelle cifre che hai SEMPRE desiderato!!</span></p>
+        <div style="background-color: white; width: 80%; height: 1px; margin-top: 20px; margin-bottom: 20px; "></div>
+
+        <p class="text1" style="margin-top: 5px;">Quindi</p>
+        <h3 class="title1" style="margin-bottom: 0px;">SE ANCHE TU VUOI PROVARLO</h3>
+        <p class="text1">Sei nel posto giusto, i prossimi STEP ci permetteranno di capire <span style="color: #e85d04;">se anche TU come già Luca, Sandro, Steven e altri sarai IDONEO</span> nel poter <span style="color: #e85d04;">aderire a questo NUOVO PROTOCOLLO</span>.</p>
+        <button class="button" id="go_button" style="margin-bottom: 30px; margin-top: 30px;">
+            <span class="button-content">Accendi la tua vita</span>
+        </button>
+        <div style="background-color: white; width: 80%; height: 1px; margin-bottom: 20px; "></div>
+
+
+        <h1 class="title1" style="margin-bottom: 20px;">RISULTATI</h3>
+
+
+            <div class="results_div_DESKTOP2">
+
+                <div style="display: flex; flex-direction: row;">
+                <img class="results_screen_MOBILE" src="https://i.ibb.co/bN5yHQZ/image00019.jpg">
+                <div style="margin-right: 30px;"></div>
+                <img class="results_screen_MOBILE" src="https://i.ibb.co/s5gr67G/image00012.jpg">
+                <div style="margin-right: 30px;"></div>
+                <img class="results_screen_MOBILE" src="https://i.ibb.co/W0z8t60/image00013.jpg">
+                </div>
+    
+                <div style="display: flex; flex-direction: row;">
+                <img class="results_screen_MOBILE" src="https://i.ibb.co/W0z8t60/image00013.jpg">
+                <div style="margin-right: 30px;"></div>
+                <img class="results_screen_MOBILE" src="https://i.ibb.co/jr7vcfP/image00014.jpg">
+                <div style="margin-right: 30px;"></div>
+                <img class="results_screen_MOBILE" src="https://i.ibb.co/gyzc77s/image00015.jpg">
+                <div style="margin-right: 30px;"></div>
+               </div>
+            </div>
+
+
+        <div class="results_div_DESKTOP">
+            <div style="display: flex; flex-direction: row;">
+            <img class="results_screen_MOBILE" src="https://i.ibb.co/bN5yHQZ/image00019.jpg">
+            <div style="margin-right: 30px;"></div>
+            <img class="results_screen_MOBILE" src="https://i.ibb.co/s5gr67G/image00012.jpg">
+            </div>
+            <div style="display: flex; flex-direction: row;">
+            <img class="results_screen_MOBILE" src="https://i.ibb.co/W0z8t60/image00013.jpg">
+            <div style="margin-right: 30px;"></div>
+            <img class="results_screen_MOBILE" src="https://i.ibb.co/jr7vcfP/image00014.jpg">
+            </div>
+            <div style="display: flex; flex-direction: row;">
+            <img class="results_screen_MOBILE" src="https://i.ibb.co/gyzc77s/image00015.jpg">
+            <div style="margin-right: 30px;"></div>
+            <img class="results_screen_MOBILE" src="https://i.ibb.co/VMVYD6L/image00011.jpg">
+            </div>
+        </div>
+
+
+        <div class="results_div_MOBILE">
+        <img class="results_screen_MOBILE" src="https://i.ibb.co/bN5yHQZ/image00019.jpg">
+        <img class="results_screen_MOBILE" src="https://i.ibb.co/s5gr67G/image00012.jpg">
+        <img class="results_screen_MOBILE" src="https://i.ibb.co/W0z8t60/image00013.jpg">
+        <img class="results_screen_MOBILE" src="https://i.ibb.co/jr7vcfP/image00014.jpg">
+        <img class="results_screen_MOBILE" src="https://i.ibb.co/gyzc77s/image00015.jpg">
+        <img class="results_screen_MOBILE" src="https://i.ibb.co/VMVYD6L/image00011.jpg">
+        </div>
+
+   </div>
+
+
+</body>
+</html>
